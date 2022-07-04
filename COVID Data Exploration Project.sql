@@ -1,3 +1,5 @@
+-- Checking if the data has been uploaded correctly
+
 SELECT *
 FROM PortfolioProject..CovidDeaths
 ORDER BY 3,4
@@ -66,7 +68,7 @@ Where dea.continent is not null
 Order By 2, 3
 
 
---USE CTE
+-- USE CTE
 
 With PopvsVac (Continent, Location, Date, Population, new_vaccinations,  RollingPeopleVaccinated)
 as
@@ -119,7 +121,6 @@ Join PortfolioProject..CovidVaccinations vac
 	and dea.date = vac.date
 Where dea.continent is not null
 --Order By 2, 3
-
 
 Select *
 From PercentPopulationVaccinated
